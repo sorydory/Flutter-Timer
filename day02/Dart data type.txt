@@ -1,0 +1,48 @@
+Dart data type
+
+
+Dart는 객체지향언어를 추구한다. 
+따라서 선언하는 데이터 타입은 모두 객체로 구성되어 있다.
+
+1. String 문자열
+2. bool 불리언
+3. int, double 숫자
+4. num 객체
+
+
+1. String 문자열
+문자열은 작은 따옴표('') 또는 큰 따옴표("")로 감싸서 표현할 수 있다.
+String name = 'dory';
+String message = "Hello dory";
+
+void main(){
+	String name = 'dory';
+	String message = "Hello dory";
+	print(name);
+	print(message);
+}
+
+
+
+
+2. bool 불리언
+Dart 는 불리언을 표현하는 bool 타입을 지원한다. 불리언은 true 또는 false 값을 가질 수 있다.
+bool isValid = true;
+bool isCompleted = false;
+
+
+
+
+
+3. int, double 숫자
+Dart는 정수와 실수를 지원합니다. 정수는 int 타입으로 표현하고, 실수는 double 타입으로 표현합니다.
+int age = 20;
+double weight = 68.5;
+
+
+
+
+4. num 객체
+Dart는 num 을 데이터 타입으로 선언할 수 있다. 
+num 을 선언할 경우 정수형 실수형 상관없이 숫자형 데이터를 선언할 수 있다.
+int, double 모두 num 객체 안에 서브클래스로 존재하기 때문이다.

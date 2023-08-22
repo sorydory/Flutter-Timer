@@ -1,0 +1,30 @@
+리스트에서 collection if, collection for 활용하기
+
+- collection if는 리스트 내에 if 문을 사용하여 조건에 따라 리스트의 요소를 결정할 수 있다. 
+- collection for은 리스트 내에 for 문을 사용하여 반복적으로 요소를 추가할 수 있다.
+
+
+
+1. collection if 사용하기
+
+var flag = true;
+var numbers = [
+  1,
+  2,
+  3,
+  4,
+  if(flag) 5,
+];
+
+
+
+
+2. collection for 사용하기
+
+ var friends = ['John', 'Sam', 'Mike'];
+  var family = [
+    'Ryon',
+    'Gigi',
+    for(var friend in friends) '*new* $friend'
+  ];
+코드 내에서 for 문을 사용하여 다른 리스트를 반복문으로 호출하여 기존 리스트에 새롭게 추가할 수 있다.
