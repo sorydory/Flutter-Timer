@@ -1,0 +1,37 @@
+Flutter
+
+설치하거나 Flutter온라인에디터 사용.
+설치:
+flutter.dev 들어가서
+Get started
+Install
+Windwos
+설치.
+
+설치 방법 2단계
+1. SDK설치 Flutter설치
+2. 시뮬레이터 설치
+ 인데
+
+1. windows쓰면 zip파일 다운받고 이것저것말고 그냥
+chocolatey.org/install 에서
+chocolatey를 쓰는게 나음 패키지매니저임.
+zip파일을 받거나 path설정이 불필요하기 때문임.
+
+individual체크 후 powershell 설치, 관리자권한으로 열기.
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+하면 powercell에 chocolatey가 설치됨.
+완료되면 choco나 choco -? 커맨드를 입력할 수 있음.
+
+2. choco install flutter를 입력하면 flutter SDK가 설치됨.
+
+(MacOS는 homebrew를 사용하면 됨.)
+
+2. 시뮬레이터 설치하기 (Android Studio를 영어로 설치하기)
+
+
+----------
+
+flutter doctor 이라는 유용한 명령어가 있음.
+무엇이 잘못됐는지를 말해줌.
+
