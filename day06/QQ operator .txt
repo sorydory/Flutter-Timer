@@ -1,0 +1,41 @@
+String capitalizeName(String? name) {
+	if(name != null){	//name이 null이 아닐 경우에만 name.toUpperCase()를 리턴
+		return name.toUpperCase();
+	}
+	return 'ANON';	//null일 경우 리턴값
+}
+//대문자로 이름 바꾸기
+
+void main(){
+	ddoryName('ddory'); //DDORY로바뀜
+	capitalizeName(Null); //사용자가 null도 입력할 수 있게하고 null값을 보내게 하고 싶어 String에 물음표 추가함 String? 은 name값이 null일 수도, 아닐 수도 있음을 의미함
+}
+
+
+
+------------------
+
+위 코드를 fat arrow로 더 짧게 표현하기
+
+String capitalizeName(String? name) => 
+	name?.toUpperCase() ?? 'ANON';	//question question , QQ Operator
+
+
+void main(){
+	ddoryName('ddory');
+	capitalizeName(Null);
+}
+
+------------------
+
+
+QQ equals / QQ assignment operator / null aware operator ?
+
+void main(){
+	String? name;
+	name ??= 'ddory'	//name이 null이면 값을 할당해줘
+	name = null;
+	name ??= 'another';
+	pring(name);	//ddory가 출력됨
+}
+
